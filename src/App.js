@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
-
+import {Route, Routes} from 'react-router-dom';
+import { Dublicate } from "./component/Dublicate/Dublicate";
+import { Navbar } from "./navbar/Navbar";
+import { UniqueValues } from "./component/UniqueValues/UniqueValues";
+import { Form } from "./component/Form/Form";
+import { EmptyDeep } from "./component/EmptyDeep/EmptyDeep";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <Navbar/>
+        <div>
+          <Routes>
+            <Route path ='dublicate' element={<Dublicate/>}/>
+            <Route path ='uniqueValues' element={<UniqueValues/>}/>
+            <Route path ='form' element={<Form/>}/>
+            <Route path ='deep' element={<EmptyDeep/>}/>
+
+          </Routes>
+        </div>
+
+      </div>
   );
 }
 
