@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react"
 import {NavLink} from "react-router-dom";
-import styleNavbar from './navbar.module.css'
+import styleNavbar from "./navbar.module.css"
 
- export const Navbar = ()=>{
+export const Navbar=()=> {
     return(
         <nav className={styleNavbar.container}>
             <div className={styleNavbar.positin}>
@@ -15,9 +15,9 @@ import styleNavbar from './navbar.module.css'
                 <div>
                     <NavLink to='/form' className={styleNavbar.text}>Register</NavLink>
                 </div>
-                <div>
-                    <NavLink to='/deep' className={styleNavbar.text}>Empty Deep</NavLink>
-                </div>
+                {/*<div>*/}
+                {/*    <NavLink to='/deep' className={styleNavbar.text}>Empty Deep</NavLink>*/}
+                {/*</div>*/}
 
             </div>
         </nav>

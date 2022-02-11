@@ -20,12 +20,14 @@ const onSubmit =(data)=>{
     alert(JSON.stringify(data))
     reset()
 }
+
     return(
         <div className={styleFrom.body}>
             <div className={styleFrom.header}>
                 <h3 className={styleFrom.header__h3}>Welcom</h3>
                 <h1 className={styleFrom.header__h1}>Join the Community</h1>
             </div>
+
             <form onSubmit={handleSubmit(onSubmit)} className={styleFrom.form}>
 
                 <div>
@@ -36,19 +38,22 @@ const onSubmit =(data)=>{
                     })} type='email' className={styleFrom.form__input}/>
                    <div> {errors?.email && <p>{errors.email.message}</p>}</div>
                 </div>
+
                 <div>
                     <label className={styleFrom.form__label}> Password</label>
                     <input {...register('password') } type='password' className={styleFrom.form__input}/>
                     <div> {errors?.password && <p>{errors.password?.message}</p>}</div>
                 </div>
 
-
                 <input type="submit"/>
+
                 <div className={styleFrom.spans}>
                 <span className={styleFrom.span1}>Already a member</span>
                 <a className={styleFrom.span2} href='https://learn.javascript.ru/'>Login Here &rarr;</a>
                 </div>
+
             </form>
+
         </div>
     )
 }
