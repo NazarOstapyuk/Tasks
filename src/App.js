@@ -5,6 +5,7 @@ import { Dublicate } from "./component/Dublicate/Dublicate";
 import { Navbar } from "./navbar/Navbar";
 import { UniqueValues } from "./component/UniqueValues/UniqueValues";
 import { Form } from "./component/Form/Form";
+import { EmptyDeep } from "./component/EmptyDeep/EmptyDeep";
 const App=()=> {
   return (
       <div>
@@ -14,6 +15,7 @@ const App=()=> {
             <Route path ='dublicate' element={<Dublicate/>}/>
             <Route path ='uniqueValues' element={<UniqueValues/>}/>
             <Route path ='form' element={<Form/>}/>
+            <Route path ='deep' element={<EmptyDeep/>}/>
           </Routes>
         </div>
 

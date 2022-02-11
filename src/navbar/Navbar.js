@@ -15,9 +15,9 @@ export const Navbar=()=> {
                 <div>
                     <NavLink to='/form' className={styleNavbar.text}>Register</NavLink>
                 </div>
-                {/*<div>*/}
-                {/*    <NavLink to='/deep' className={styleNavbar.text}>Empty Deep</NavLink>*/}
-                {/*</div>*/}
+                <div>
+                    <NavLink to='/deep' className={styleNavbar.text}>Empty Deep</NavLink>
+                </div>
 
             </div>
         </nav>
